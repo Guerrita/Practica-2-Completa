@@ -3,15 +3,30 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorVistaPrincipal">
+<BorderPane fx:id="contenedorPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorVistaPrincipal">
    <top>
       <MenuBar style="-fx-background-color: #42A5F5;" BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" onAction="#mnuAgregar_action" text="Agregar" />
-          <Menu mnemonicParsing="false" onAction="#mnuListasPrincipales_action" text="Listas principales" />
-            <Menu mnemonicParsing="false" onAction="#mnuListasIntersectadas_action" text="Listas intersectadas" />
-            <Menu mnemonicParsing="false" onAction="#mnuListasExcluyentes_action" text="Listas excluyentes" />
-            <Menu mnemonicParsing="false" onAction="#mnuLZ_action" text="LZ" />
+          <Menu mnemonicParsing="false" onAction="#mnuAgregar_action" text="Agregar">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mnuAgregar_action" text="dato" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Listas principales">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mnuListasPrincipales_action" text="Mostrar" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Listas intersectadas">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mnuListasIntersectadas_action" text="Mostrar" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Listas excluyentes">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mnuListasExcluyentes_action" text="Mostrar" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="LZ">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#mnuLZ_action" text="Mostrar" />
+               </items></Menu>
         </menus>
       </MenuBar>
    </top>

@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="vista.ListasPrincipales"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorListasPrincipales">
+   <children>
+      <VBox layoutX="101.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Lista L0" />
+            <Label fx:id="lblL0" text="Label">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="Lista L2" />
+            <Label fx:id="lblL2" text="Label" />
+            <Label text="Lista L3" />
+            <Label fx:id="lblL3" text="Label" />
+            <Label text="Lista L5" />
+            <Label fx:id="lblL5" text="Label" />
+         </children>
+         <padding>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </padding>
+      </VBox>
+   </children>
 </AnchorPane>
